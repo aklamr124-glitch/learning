@@ -1,9 +1,15 @@
-name = input ("enter your name ") 
-age = int (input ("enter your age "))
-height = float(input ("enter your height"))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-is_student = True
-print ("your name is  :" , name , "    your age is : " , str( age))
-print (f"your age after 10 years  {age+10} ")
-print ("your height is :", height)
-print ("Are you student " , is_student)
+operation = input("Choose operation (+, -, *, /): ")
+
+if operation == "+":
+    print("Result:", num1 + num2)
+elif operation == "-":
+    print("Result:", num1 - num2)
+elif operation == "*":
+    print("Result:", num1 * num2)
+elif operation == "/":
+    print("Result:", num1 / num2)
+else:
+    print("Invalid operation")
